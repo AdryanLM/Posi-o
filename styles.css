@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima dos outros elementos */
+}
+
+.ancestor {
+    position: relative; /* Referência ancestral para elementos absolutos */
+    width: 100%;
+    height: 400px; /* Altura ajustada para melhor visualização */
+    background-color: #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Adiciona espaço entre o cabeçalho e o contêiner */
+    border: 2px solid #666; /* Adiciona uma borda para diferenciar o ancestral */
+}
+
+.ancestor-1 {
+    background-color: #e0e0e0; /* Cor de fundo para o primeiro ancestral */
+}
+
+.ancestor-2 {
+    background-color: #f9f9f9; /* Cor de fundo para o segundo ancestral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Referência para posicionamento */
+    height: 500px; /* Altura ajustada para melhor visualização */
+}
+
+.container {
+    position: relative; /* Referência para posicionamento absoluto */
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute; /* Inicialmente absoluto para estilização */
+}
+
+.static-box {
+    position: static; /* Este é o valor padrão, o elemento não se move */
+    background-color: #3498db;
+    top: 20px; /* Adiciona um espaço no topo */
+    left: 20px; /* Adiciona um espaço à esquerda */
+}
+
+.absolute-box {
+    position: absolute; /* Posicionado em relação ao contêiner com position: relative */
+    top: 20px;
+    right: 20px;
+    background-color: #2ecc71;
+}
+
+.sticky-box {
+    position: sticky; /* Fica fixo quando atinge a posição top */
+    top: 100px; /* Define uma distância do topo da viewport */
+    background-color: #f39c12;
+}
+
+.fixed-box {
+    position: fixed; /* Fixo na tela, independente da rolagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o box na tela */
+    background-color: #e74c3c;
+}
+
+
+
+.image1{
+    position: absolute; /* Para posicionar o box fixo dentro do contêiner de imagem */
+    width: 25%;
+    height: 25%;
+    left: 2px;
+    top: 0.09rem;
+    
+}
+.image2{
+    position: absolute; /* Para posicionar o box fixo dentro do contêiner de imagem */
+    width: 25%;
+    height: 25%;
+    right: 2px;
+    bottom: 9rem;
+   
+}
+
+.example-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content p {
+    margin: 20px 0;
+}

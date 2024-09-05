@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Posicionamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        Exemplo de Posicionamento
+    </header>
+
+    <div class="ancestor ancestor-1">
+        <div class="container">
+            <div class="box static-box">Static</div>
+            <div class="box absolute-box">Absolute</div>
+            <div class="box sticky-box">Sticky</div>
+            <!-- Novo contêiner estático no canto superior direito -->
+    
+        </div>
+    </div>
+
+    <div class="ancestor ancestor-2">
+        <div class="image1">
+            <img src="moto.jpeg" alt="Imagem Exemplo" class="example-image">
+            <div class="box fixed-box">Fixed</div>
+        </div>
+        <div class="image2">
+            <img src="moto.jpeg" alt="Imagem Exemplo" class="example-image">
+            <div class="box fixed-box">Fixed</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Explicações</h2>
+        <p><strong>Static:</strong> Este é o valor padrão e não se move em relação ao fluxo normal do documento.</p>
+        <p><strong>Fixed:</strong> Fica fixo na tela, independente da rolagem da página.</p>
+        <p><strong>Absolute:</strong> Posicionado em relação ao seu contêiner ancestral mais próximo que não tenha `position: static`.</p>
+        <p><strong>Sticky:</strong> Fica fixo quando atinge um ponto específico na tela, mas se comporta como `relative` antes disso.</p>
+    </div>
+</body>
+</html>
